@@ -14,6 +14,12 @@ export class PerfilUsuarioComponent {
     nombre: new FormControl(''),
     apellidos: new FormControl(''),
     edad: new FormControl(0),
+    direccion: new FormGroup({
+      calle: new FormControl(''),
+      codPostal: new FormControl(''),
+      localidad: new FormControl(''),
+      provincia: new FormControl('')
+    })
   })
 
   onSubmit() {

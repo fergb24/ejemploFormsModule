@@ -5,5 +5,16 @@
     <input id="apellidos" type="text" formControlName="apellidos">
     <label for="edad">Edad:</label>
     <input id="edad" type="text" formControlName="edad">
+    <div formGroupName="direccion">
+        <h2>Direccion</h2>
+        <label for="calle">Calle: </label>
+        <input id="calle" type="text" formControlName="calle">
+        <label for="localidad">Localidad: </label>
+        <input id="localidad" type="text" formControlName="localidad">
+        <label for="provincia">Provincia: </label>
+        <input id="provincia" type="text" formControlName="provincia">
+        <label for="codPostal">Código Postal: </label>
+        <input id="codPostal" type="text" formControlName="codPostal">
+    </div>
     <button type="submit" (click)="onSubmit()">Enviar</button>
 </form>
