@@ -13,4 +13,8 @@ export class AppComponent {
   title = 'ejemplo-formulario';
   name = new FormControl('');
   apellido = new FormControl('');
+
+  updateName() {
+    this.name.setValue('Nancy');
+  }
 }
