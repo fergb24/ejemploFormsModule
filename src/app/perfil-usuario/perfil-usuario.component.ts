@@ -26,4 +26,13 @@ export class PerfilUsuarioComponent {
     console.log(this.perfilForm.value);
     this.perfilForm.reset();
   }
+  
+  actualiza() {
+    this.perfilForm.patchValue({
+      nombre: 'Juanito',
+      direccion: {
+        localidad: 'Dos Hermanas'
+      }
+    })
+  }
 }
