@@ -1,0 +1,9 @@
+<form [formGroup]="perfilForm">
+    <label for="nombre">Nombre:</label>
+    <input id="nombre" type="text" formControlName="nombre">
+    <label for="apellidos">Apellidos: </label>
+    <input id="apellidos" type="text" formControlName="apellidos">
+    <label for="edad">Edad:</label>
+    <input id="edad" type="text" formControlName="edad">
+    <button type="submit" (click)="onSubmit()">Enviar</button>
+</form>
